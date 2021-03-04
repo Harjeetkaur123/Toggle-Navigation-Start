@@ -1,0 +1,40 @@
+
+/*Hybrid of Andy Bell's reset*/
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body,
+h1, h2, h3, h4,
+p, ul, ol, dl,
+figcaption, figure, blockquote,
+li, dd {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3 {
+	font-size: 16px;
+}
+
+ul, ol {
+	list-style-type: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+article>*+*{
+	margin-top: 1em;
+}
+
+input, button,
+textarea, select {
+	font: inherit;
+}

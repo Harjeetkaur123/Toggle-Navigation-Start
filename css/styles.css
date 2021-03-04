@@ -1,0 +1,121 @@
+html {
+	font-size: 62.5%;
+}
+
+/* mobile first css */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    background-color: #192f5e;
+}
+
+header {
+	background-color: #fff;
+	padding: 2%;
+}
+
+/*Flex container comes before nav. Hence, it will be placed between header and haeder nav*/
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*header nav {
+	width: 480px;    Temporary sizing to be removed 
+	margin: 0 auto;  once complete 
+}*/
+
+header a{
+    color: #3f3f3f;
+    text-decoration: none;
+    display: block;
+}
+
+.menu a:hover,
+.menu a:active {
+    background-color: gainsboro;
+    border-radius: 4px;
+}
+
+.toggle-btn {
+    border: none;
+    background-color: #fff;
+    outline: none;
+}
+
+.toffle-btn:hover {
+    cursor: pointer;
+}
+
+svg rect{
+    fill: #3f3f3f;
+}
+
+.menu li{
+    line-height: 4rem;
+    text-align: center;
+}
+
+header nav{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease-in-out;
+}
+
+.show-nav {
+    max-height: 50rem;
+}
+
+
+
+/* ************************* section ****************** */
+section {
+    padding: 3.125rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section p {
+    color: #d5e294;
+    border-bottom: 2px solid #d5e294;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 1.777rem;
+}
+
+section h2,
+footer {
+    color: #fff;
+    font-size: 3.157rem;
+    margin-bottom: 2rem;
+}
+
+/*--- Footer --- */
+footer {
+	text-align: center;
+	position: -webkit-sticky;
+	position: sticky;
+}
+
+@media only screen and (min-width: 600px){
+
+    .toggle-btn{
+        display: none;  /*so that we don't see the toggle button anymore when it's size is above 600px*/
+    }
+
+    header nav{
+        max-height: 50rem;
+        overflow: hidden;
+    }
+
+    .menu li{
+        margin-left: 0.5rem;
+    }
+
+    .menu a{
+        padding: 0 0.5rem;
+    }
+}
